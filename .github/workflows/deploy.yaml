@@ -8,11 +8,11 @@ jobs:
   deploy:
     steps:
       - name: Deploy our silly web page
-        uses: appleboy/ssh-action@v0.12
+        uses: appleboy/ssh-action@v0.1.4
         with:
           host: ${{secrets.SSH_HOST}}
-          key: ${{secretes.SSH_KEY}}
-          username: ${{secretes.SSH_USERNAME}}
+          key: ${{secrets.SSH_KEY}}
+          username: ${{secrets.SSH_USERNAME}}
 
           script: |
             cd /srv/code/
