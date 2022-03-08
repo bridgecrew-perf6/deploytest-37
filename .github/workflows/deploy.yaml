@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy our silly web page
-        uses: appleboy/ssh-action
+        uses: appleboy/ssh-action@0.1.4
         with:
           host: ${{secrets.SSH_HOST}}
           key: ${{secrets.SSH_KEY}}
