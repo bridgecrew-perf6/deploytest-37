@@ -6,7 +6,6 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy our silly web page
         uses: appleboy/ssh-action@v0.12
